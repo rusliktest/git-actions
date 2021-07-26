@@ -9,10 +9,11 @@ async function makePush() {
   try {
     const file = await readFile(filepath, "utf-8")
     const fileContent = Buffer.from(file).toString()
+    const commitNumber = Number(fileContent) + 1
 
-    await writeFile(filepath, Number(fileContent) + 1)
+    await writeFile(filepath, commitNumber)
 
-    exec('git add . & git commit -m "test"', (error, stdout, stderr) => {
+    exec(`git add . & git commit -m "commit_number:${commitNumber}" & git push origin ${myArgs[0]} `, (error, stdout, stderr) => {
       if (error) {
         console.log("error", error)
         console.log(`error: ${error.message}`);
