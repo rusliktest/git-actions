@@ -8,3 +8,4 @@ rules:
     max: 120
   document-start: disable
   truthy: disable
+  trailing-spaces: disable
