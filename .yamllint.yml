@@ -9,3 +9,4 @@ rules:
   document-start: disable
   truthy: disable
   trailing-spaces: disable
+  
