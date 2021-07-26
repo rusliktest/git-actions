@@ -2,6 +2,9 @@
 
 This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
 
+## Build
+`npm run build` - соберёт билд в dist
+
 ## Inputs
 
 ## `who-to-greet`
