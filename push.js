@@ -32,22 +32,3 @@ async function makePush() {
 }
 
 makePush()
-
-// fs.readFile(filepath, "utf-8", (err, content) => {
-//   if (err) throw err
-//   const data = Buffer.from(content)
-//   console.log('Content: ', data.toString()) // выведет уже нормальную строку
-//   console.log('Content: ', content) // если передана правильная кодировка, то всё выведет нормально
-// })
-
-// writeFile(filepath)
-
-// fs.writeFile(filepath, myArgs[0], err => {
-//   if (err) throw err
-//   // console.log('Файл создан')
-
-//   // fs.appendFile(filepath, 'Новая строка', err => { // Этот метод для обновления файлов
-//   //   if (err) throw err
-//   //   console.log('Файл обновлён!')
-//   // })
-// })
