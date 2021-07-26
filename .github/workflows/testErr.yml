@@ -8,8 +8,5 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
-            - name: GIT_TEST
-              run: npm run sha --sha=${{ github.sha }}
-
             - name: GIT_SHA
-              run: echo ${{ github.sha }}
+              run: echo test_error_file_123
