@@ -13,7 +13,7 @@ async function makePush() {
 
     await writeFile(filepath, commitNumber)
 
-    exec(`git add . & git commit -m "commit_number:${commitNumber}" & git push origin ${myArgs[0]} `, (error, stdout, stderr) => {
+    exec(`git add . & git commit -m "commit_number_: ${commitNumber}" & git push origin ${myArgs[0]} `, (error, stdout, stderr) => {
       if (error) {
         console.log("error", error)
         console.log(`error: ${error.message}`);
