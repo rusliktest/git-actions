@@ -1,6 +1,9 @@
 # Как создать?
 `https://docs.github.com/en/actions/creating-actions/creating-a-javascript-action#testing-out-your-action-in-a-workflow`
 
+uses: `rusliktest/hello-world-javascript-action@v1.3`
+Имя гита + имя репозитория + тег с версией
+
 # Hello world javascript action
 
 This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
