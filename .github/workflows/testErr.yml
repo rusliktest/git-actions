@@ -9,4 +9,4 @@ jobs:
             - uses: actions/checkout@v2
 
             - name: GIT_SHA
-              run echo test_error_file_123
+              run: echo test_error_file_123
