@@ -8,8 +8,8 @@ jobs:
       - name: Hello world action step
         id: hello
         uses: rusliktest/linter@v1.7        
-        with:
-          config_file: .yamllint.yml
+        # with:
+        #   config_file: .yamllint.yml
         # rusliktest/yaml-linter@v2.2
         # rusliktest/hello-world-javascript-action@v1.3
         # with:
