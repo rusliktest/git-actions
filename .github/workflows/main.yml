@@ -6,18 +6,14 @@ jobs:
     name: Test linter
     steps:
       - uses: actions/checkout@v1
-      - name: Hello world action step
-        # id: hello
-        uses: rusliktest/linter@v3.6
+
+      - name: yaml-lint
+        uses: ibiqlik/action-yamllint@v3
         with:
-          # file_or_dir: .
-          config_file: .yamllint.yaml        
-        # with:
-        #   config_file: .yamllint.yml
-        # rusliktest/yaml-linter@v2.2
-        # rusliktest/hello-world-javascript-action@v1.3
-        # with:
-        #   who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      # - name: Get the output time
-      #   run: echo "The time was ${{ steps.hello.outputs.time }}"
+          config_file: .yamllint.yml
+    # steps:
+    #   - uses: actions/checkout@v1
+    #   - name: Hello world action step
+    #     uses: rusliktest/linter@v3.6
+    #     with:
+    #       config_file: .yamllint.yaml        
