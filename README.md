@@ -4,6 +4,9 @@ Git actions tests
 - .git/config
 - поменять `url` на: `https://youruser:password@github.com/user/repo.git`
 
+# Push
+`npm run push test` - где `test` - ветка, на которую я пушу
+
 # Hello world javascript action
 
 This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
