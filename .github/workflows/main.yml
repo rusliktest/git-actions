@@ -4,21 +4,20 @@ jobs:
   yamlLintJobs:
     runs-on: ubuntu-latest
     name: Test linter
-    steps:
-      - uses: actions/checkout@v1
-
-      - name: Hello world action step
-        uses: rusliktest/linter@v4.0
-        with:
-          config_file: .yamllint.yaml
-    # uses: ./   
     # steps:
     #   - uses: actions/checkout@v1
 
-    #   - name: yaml-lint
-    #     uses: ibiqlik/action-yamllint@v3
+    #   - name: Hello world action step
+    #     uses: rusliktest/linter@v4.0
     #     with:
     #       config_file: .yamllint.yaml
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: yaml-lint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          config_file: .yamllint.yaml
     # steps:
     #   - uses: actions/checkout@v1
     #   - name: Hello world action step
