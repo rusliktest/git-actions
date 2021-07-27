@@ -5,8 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Test linter
     steps:
+      - uses: actions/checkout@v1
       - name: Hello world action step
-        id: hello
+        # id: hello
         uses: rusliktest/linter@v3.6
         with:
           # file_or_dir: .
