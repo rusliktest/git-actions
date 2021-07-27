@@ -8,5 +8,5 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
-              - name: GIT_TEST
-                run: echo GIT_TEST
+            - name: GIT_TEST
+              run: echo GIT_TEST
