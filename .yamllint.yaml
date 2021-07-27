@@ -6,7 +6,6 @@ ignore: |
 rules:
   line-length: 
     max: 120
-    braces: enable
   brackets: enable
   colons: enable
   commas: enable
