@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: rusliktest/linter@v1.6        
+        uses: rusliktest/linter@v1.7        
         with:
           config_file: .yamllint.yml
         # rusliktest/yaml-linter@v2.2
