@@ -1,0 +1,12 @@
+name: Test HELLO_WRLD!
+
+on: [push]
+
+jobs:
+    get_env:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: GIT_SHA
+              run: echo test_error_file_123

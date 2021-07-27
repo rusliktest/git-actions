@@ -1,0 +1,24 @@
+{
+ "name": "git-actions",
+ "version": "1.0.0",
+ "description": "Git actions tests",
+ "main": "index.js",
+ "scripts": {
+  "push": "node push.js"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://rusliktest:dwk9i2dsawt2eykdajkowdalwo2ae27gdykmnd52lknjd@github.com/rusliktest/git-actions.git"
+ },
+ "keywords": [],
+ "author": "",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/rusliktest/git-actions/issues"
+ },
+ "homepage": "https://github.com/rusliktest/git-actions#readme",
+ "dependencies": {
+  "@actions/core": "^1.4.0",
+  "@actions/github": "^5.0.0"
+ }
+}
