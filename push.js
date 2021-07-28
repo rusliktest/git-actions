@@ -9,7 +9,7 @@ async function makePush() {
   try {
     const file = await readFile(filepath, "utf-8")
     const fileContent = Buffer.from(file).toString()
-    const commitNumber = Number(fileContent) + 1
+    const commitNumber = String(Number(fileContent) + 1)
 
     await writeFile(filepath, commitNumber)
 
@@ -23,11 +23,11 @@ async function makePush() {
         console.log(`stderr: ${stderr}`);
         return;
       }
-      console.log(`stdout: ${stdout}`);
+      console.log(`Successful commit: ${stdout}`);
     })
 
   } catch (err) {
-    console.log("Error: ", err)
+    console.log("Unexpected error: ", err)
   }
 }
 
