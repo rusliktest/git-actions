@@ -9,4 +9,4 @@ jobs:
             - uses: actions/checkout@v2
 
             - name: GIT_TEST
-              run: echo GIT_TEST ${{ github.action_path }}
+              run: echo GIT_TEST dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
