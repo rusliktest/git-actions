@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Hello world action step
+      - name: Ruslik`s linter
         uses: rusliktest/linter@v10
     #     with:
     #       config_file: .yamllint.yaml
