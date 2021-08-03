@@ -1,0 +1,20 @@
+version: '1.0'
+stages:
+   - first
+   - second
+
+steps:
+  first_step:
+    title: "My firs step"
+    image: codefresh/kubectl
+    stage: first
+    command:
+      - echo privet, MIR!
+      - echo poka, __WRLD__!
+  second_step:
+    title: "My second step"
+    image: codefresh/kubectl
+    stage: second
+    command:
+      - echo hello, MIR22222!
+      - echo buy, __WRLD22222__!
