@@ -1,9 +1,10 @@
-#!/bin/bash -l
+#!/bin/bash
 
 echo "======================"
 echo "= Linting YAML files ="
 echo "======================"
 
+INPUT_FILE_OR_DIR="./"
 DEFAULT_RULES="{\
     extends: default, \
     rules: {line-length: {max: 120}, \
@@ -13,6 +14,8 @@ DEFAULT_RULES="{\
 "
 
 options+=(-d "$DEFAULT_RULES")
+options+=("${INPUT_FILE_OR_DIR:-.}")
+options+(-f "colored")
 
 yamllint "${options[@]}"
 
