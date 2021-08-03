@@ -24,7 +24,7 @@ steps:
     # If you have a Dockerfile in the repo you can use
     # dockerfile: 'Dockerfile'
     dockerfile:
-      content: "FROM python:3-alpine\n          RUN apk add --no-cache bash gcc musl-dev && \ pip install 'yamllint>=1.25.0' && \ rm -rf ~/.cache/pip\n          ADD entrypoint.sh /entrypoint.sh\n          ENTRYPOINT ['/entrypoint.sh']"
+      content: "FROM python:3-alpine\n          RUN apk add --no-cache bash gcc musl-dev\n          RUN pip install 'yamllint>=1.25.0'\n          RUN rm -rf ~/.cache/pip\n          ADD entrypoint.sh /entrypoint.sh\n          ENTRYPOINT ['/entrypoint.sh']"
     stage: "build"
 
   test:
