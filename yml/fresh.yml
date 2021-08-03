@@ -34,6 +34,6 @@ steps:
     working_directory: "${{clone}}" # Running command where code cloned
     commands:
       - "chmod +x entrypoint.sh"
-      - "./entrypoint.sh"
+      - "bash entrypoint.sh"
     stage: "test"
 
