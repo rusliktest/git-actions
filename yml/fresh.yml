@@ -33,8 +33,6 @@ steps:
     image: "ubuntu:latest" # The image in which command will be executed
     working_directory: "${{clone}}" # Running command where code cloned
     commands:
-      - "pip install 'yamllint>=1.25.0'"
-      - "rm -rf ~/.cache/pip"
       - "chmod +x entrypoint.sh"
       - "bash entrypoint.sh"
     stage: "test"

@@ -15,7 +15,7 @@ DEFAULT_RULES="{\
 
 options+=(-d "$DEFAULT_RULES")
 options+=("${INPUT_FILE_OR_DIR:-.}")
-options+(-f "colored")
+options+=(-f "colored")
 
 yamllint "${options[@]}"
 
